@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Test
 %define	pnam	ClassAPI
-Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
+Summary:	Test::ClassAPI - provides basic first-pass API testing for large class trees
 Summary(pl):	Test::ClassAPI - podstawowy pierwszy przebieg testowania API du¿ych drzew klas
 Name:		perl-Test-ClassAPI
 Version:	0.9
@@ -34,9 +34,9 @@ This module aims to provide such a capability.
 
 %description -l pl
 Przy wielu API z du¿± liczb± klas mo¿e byæ bardzo przydatna mo¿liwo¶æ
-wykonania szybkiego przebiegu, aby upewniæ siê, ¿e te klasy, metody i
-dziedziczenie s± poprawne, przed rozpoczêciem bardziej rozleg³ego
-testowania. Ten modu³ próbuje dostarczyæ tak± mo¿liwo¶æ.
+wykonania szybkiego przebiegu, aby upewniæ siê przed rozpoczêciem
+bardziej rozleg³ego testowania, ¿e te klasy, metody i dziedziczenie s±
+poprawne. Ten modu³ próbuje dostarczyæ tak± mo¿liwo¶æ.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

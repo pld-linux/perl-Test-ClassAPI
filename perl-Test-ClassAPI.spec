@@ -6,7 +6,7 @@
 %define	pdir	Test
 %define	pnam	ClassAPI
 Summary:	Test::ClassAPI - Provides basic first-pass API testing for large class trees
-#Summary(pl):
+Summary(pl):	Test::ClassAPI - podstawowy pierwszy przebieg testowania API du¿ych drzew klas
 Name:		perl-Test-ClassAPI
 Version:	0.9
 Release:	1
@@ -18,8 +18,8 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Class::Inspector) >= 1.05
-BuildRequires:	perl(Config::Tiny) >= 1.9
+BuildRequires:	perl-Class-Inspector >= 1.05
+BuildRequires:	perl-Config-Tiny >= 1.9
 BuildRequires:	perl(File::Spec) >= 0.83
 BuildRequires:	perl(Test::More)
 %endif
@@ -32,7 +32,11 @@ be able to do a quick once-over to make sure that classes, methods,
 and inheritance is correct, before doing more comprehensive testing.
 This module aims to provide such a capability.
 
-#%description -l pl
+%description -l pl
+Przy wielu API z du¿± liczb± klas mo¿e byæ bardzo przydatna mo¿liwo¶æ
+wykonania szybkiego przebiegu, aby upewniæ siê, ¿e te klasy, metody i
+dziedziczenie s± poprawne, przed rozpoczêciem bardziej rozleg³ego
+testowania. Ten modu³ próbuje dostarczyæ tak± mo¿liwo¶æ.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

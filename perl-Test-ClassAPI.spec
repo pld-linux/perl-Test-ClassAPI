@@ -8,13 +8,13 @@
 Summary:	Test::ClassAPI - provides basic first-pass API testing for large class trees
 Summary(pl):	Test::ClassAPI - podstawowy pierwszy przebieg testowania API du¿ych drzew klas
 Name:		perl-Test-ClassAPI
-Version:	0.9
+Version:	1.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4e3b17a248581c2c3acd529814faa9bb
+# Source0-md5:	f242a7d8ca652d7207a50461e328dafc
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}

@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Test
-%define	pnam	ClassAPI
+%define		pdir	Test
+%define		pnam	ClassAPI
 Summary:	Test::ClassAPI - provides basic first-pass API testing for large class trees
 Summary(pl):	Test::ClassAPI - podstawowy pierwszy przebieg testowania API du¿ych drzew klas
 Name:		perl-Test-ClassAPI

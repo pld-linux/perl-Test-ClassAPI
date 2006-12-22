@@ -13,16 +13,17 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	f242a7d8ca652d7207a50461e328dafc
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Test-ClassAPI/
 %if %{with tests}
+BuildRequires:	perl(File::Spec) >= 0.83
 BuildRequires:	perl-Class-Inspector >= 1.05
 BuildRequires:	perl-Config-Tiny >= 1.9
-BuildRequires:	perl(File::Spec) >= 0.83
-BuildRequires:	perl(Test::More)
+BuildRequires:	perl-Test-Simple
 %endif
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

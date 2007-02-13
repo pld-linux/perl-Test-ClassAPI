@@ -6,7 +6,7 @@
 %define		pdir	Test
 %define		pnam	ClassAPI
 Summary:	Test::ClassAPI - provides basic first-pass API testing for large class trees
-Summary(pl.UTF-8):   Test::ClassAPI - podstawowy pierwszy przebieg testowania API dużych drzew klas
+Summary(pl.UTF-8):	Test::ClassAPI - podstawowy pierwszy przebieg testowania API dużych drzew klas
 Name:		perl-Test-ClassAPI
 Version:	1.02
 Release:	1

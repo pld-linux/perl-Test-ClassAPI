@@ -20,6 +20,7 @@ URL:		http://search.cpan.org/dist/Test-ClassAPI/
 BuildRequires:	perl(File::Spec) >= 0.83
 BuildRequires:	perl-Class-Inspector >= 1.05
 BuildRequires:	perl-Config-Tiny >= 1.9
+BuildRequires:	perl-Params-Util
 BuildRequires:	perl-Test-Simple
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0

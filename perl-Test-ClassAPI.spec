@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Test
 %define		pnam	ClassAPI
@@ -12,9 +12,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ff06bc671f753f4148c39df08fb6dd98
-URL:		https://metacpan.org/release/Test-ClassAPI
+URL:		https://metacpan.org/dist/Test-ClassAPI
 %if %{with tests}
 BuildRequires:	perl(File::Spec) >= 0.83
 BuildRequires:	perl-Class-Inspector >= 1.12
